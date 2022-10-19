@@ -22,7 +22,7 @@ import Result from "./Result";
 import axios from "axios";
 
 class Compute extends React.Component {
-  constructor(props) {
+  constructor(props:any) {
     super(props);
     this.state = { prompt: "", result_src: "", isLoading: false };
     this.handleClick = this.handleClick.bind(this);
@@ -31,7 +31,7 @@ class Compute extends React.Component {
     this.slugify = this.slugify.bind(this);
   }
 
-  slugify(str) {
+  slugify(str:any) {
     return str
       .toString()
       .toLowerCase()
