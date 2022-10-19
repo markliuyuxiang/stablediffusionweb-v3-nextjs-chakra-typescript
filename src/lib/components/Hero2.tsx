@@ -105,7 +105,7 @@ export default function CallToActionWithVideo() {
             overflow={"hidden"}
           >
             <Image
-              alt={"Hero Image"}
+            
               fit={"cover"}
               align={"center"}
               w={"100%"}
