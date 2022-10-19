@@ -59,13 +59,13 @@ export default function SmallWithSocial() {
       >
         <Text>© 2022 Stable Diffusion Online. All rights reserved</Text>
         <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Twitter"}>
+          <SocialButton label={"Twitter"} href={"#"}>
             <FaTwitter />
           </SocialButton>
-          <SocialButton label={"YouTube"}>
+          <SocialButton label={"YouTube"} href={"#"}>
             <FaYoutube />
           </SocialButton>
-          <SocialButton label={"Instagram"}>
+          <SocialButton label={"Instagram"} href={"#"}>
             <FaInstagram />
           </SocialButton>
         </Stack>
