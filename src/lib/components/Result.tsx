@@ -1,9 +1,9 @@
 import { Button, Image, Text } from "@chakra-ui/react";
 import React from "react";
 
-class Result extends React.Component {
-  constructor() {
-    super();
+class Result extends React.Component <any, any> {
+  constructor(props:any) {
+    super(props);
     this.state = { loaded: false };
   }
 

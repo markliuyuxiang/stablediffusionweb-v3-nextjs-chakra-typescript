@@ -21,7 +21,7 @@ import { CheckIcon } from "@chakra-ui/icons";
 import Result from "./Result";
 import axios from "axios";
 
-class Compute extends React.Component {
+class Compute extends React.Component<any, any> {
   constructor(props:any) {
     super(props);
     this.state = { prompt: "", result_src: "", isLoading: false };
@@ -79,8 +79,9 @@ class Compute extends React.Component {
 
     axios(config)
       .then((response) => {
+        var intID:any = null;
         if (intID) clearTimeout(intID);
-        var intID = setInterval(() => {
+        intID = setInterval(() => {
           fetch(
             `https://corsbridge.xiaopai.workers.dev/?https://healthydiffusion.com/process?userID=${userID}`,
             { cache: "no-store" }
@@ -101,13 +102,13 @@ class Compute extends React.Component {
             });
         }, 5000);
       })
-      .catch(function (error) {
+      .catch( (error)=> {
         this.setState({ isLoading: false });
         console.log(error);
       });
   }
 
-  handleChange(event) {
+  handleChange(event:any) {
     this.setState({ prompt: event.target.value });
   }
 
