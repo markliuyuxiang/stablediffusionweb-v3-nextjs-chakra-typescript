@@ -33,7 +33,7 @@ export default function Playground() {
         
         spacing={8}
         mx={"auto"}
-        maxW={"xl"}
+
         py={12}
         px={6}
         w={"full"}
