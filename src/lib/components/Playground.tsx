@@ -30,14 +30,14 @@ export default function Playground() {
       bg={useColorModeValue("gray.50", "gray.800")}
     >
       <Stack
-        w="100%"
+        
         spacing={8}
         mx={"auto"}
         maxW={"xl"}
         py={12}
         px={6}
         w={"full"}
-        maxW={"lg"}
+        
       >
         <Box
           rounded={"lg"}
