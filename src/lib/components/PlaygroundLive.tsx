@@ -31,11 +31,11 @@ class Playground extends React.Component {
         <Stack
           spacing={8}
           mx={"auto"}
-          maxW={"lg"}
+         
           py={12}
           px={6}
           w={"full"}
-          maxW={"lg"}
+          maxW={"xl"}
         >
           <Box
             rounded={"lg"}

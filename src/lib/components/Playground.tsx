@@ -37,7 +37,7 @@ export default function Playground() {
         py={12}
         px={6}
         w={"full"}
-        
+        maxW={"xl"}
       >
         <Box
           rounded={"lg"}
