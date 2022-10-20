@@ -111,7 +111,7 @@ export default function CallToActionWithVideo() {
               w={"100%"}
               h={"100%"}
               src={
-                "https://cdn.jsdelivr.net/gh/markliuyuxiang/nextjs/public/Social%2Btemplates%20(1).png"
+                "/head-image.png"
               }
             />
           </Box>
