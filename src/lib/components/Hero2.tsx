@@ -111,7 +111,7 @@ export default function CallToActionWithVideo() {
               w={"100%"}
               h={"100%"}
               src={
-                "/head-image.png"
+                "/head-image.webp"
               }
             />
           </Box>
