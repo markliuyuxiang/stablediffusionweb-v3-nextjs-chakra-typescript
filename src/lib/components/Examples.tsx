@@ -2,7 +2,7 @@ import { Button, Image, Text,Tag, HStack,Stack,Box } from "@chakra-ui/react";
 import React from "react";
 
 
-const features => () {
+const features => (props:any) {
     return {
       id: i,
       title: 'Lorem ipsum dolor sit amet',
