@@ -59,7 +59,7 @@ export default function SmallWithSocial() {
       >
         <Text>© 2022 Stable Diffusion Online. All rights reserved</Text>
         <Stack direction={"row"} spacing={6}>
-          <a href="/license.html" target="_blank"> <Text spacing={6}>License</Text></a>
+          <a href="/license.html" target="_blank"> <Text>License</Text></a>
 
           <SocialButton label={"Twitter"} href={"#"}>
             <FaTwitter />
