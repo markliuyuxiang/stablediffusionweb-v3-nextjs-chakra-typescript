@@ -24,7 +24,6 @@ import React from "react";
 import { CheckIcon } from "@chakra-ui/icons";
 import Result from "./Result";
 import axios from "axios";
-import Examples from "lib/components/Examples";
 import ErrorAlert from "./ErrorAlert";
 
 class Compute extends React.Component<any, any> {
