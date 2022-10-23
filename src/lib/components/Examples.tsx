@@ -2,14 +2,6 @@ import { Button, Image, Text,Tag, HStack,Stack,Box } from "@chakra-ui/react";
 import React from "react";
 
 
-const features => (props:any) {
-    return {
-      id: i,
-      title: 'Lorem ipsum dolor sit amet',
-      text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.',
-    };
-  });
-
 
 class Examples extends React.Component <any, any> {
   constructor(props:any) {
