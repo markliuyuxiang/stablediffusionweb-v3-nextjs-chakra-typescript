@@ -1,3 +1,4 @@
+/* eslint-disable react/destructuring-assignment */
 import {
   Flex,
   Box,
@@ -6,8 +7,11 @@ import {
   Input,
   Checkbox,
   Textarea,
+  Alert,AlertIcon,
   VStack,
   Icon,
+  TagLabel,
+  Tag,
   Stack,
   Link,
   Button,
@@ -20,11 +24,13 @@ import React from "react";
 import { CheckIcon } from "@chakra-ui/icons";
 import Result from "./Result";
 import axios from "axios";
+import Examples from "lib/components/Examples";
+import ErrorAlert from "./ErrorAlert";
 
 class Compute extends React.Component<any, any> {
   constructor(props:any) {
     super(props);
-    this.state = { prompt: "", result_src: "", isLoading: false };
+    this.state = { prompt: "", result_src: "", isLoading: false, showError: false };
     this.handleClick = this.handleClick.bind(this);
     this.handleClickV2 = this.handleClickV2.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -56,9 +62,11 @@ class Compute extends React.Component<any, any> {
 
   handleClickV2() {
     if (this.state.prompt == "") {
+      this.setState({ showError:true });
       return;
     }
-    this.setState({ isLoading: true });
+    this.setState({ showError: false  });
+    this.setState({ isLoading: true,});
     let userID = Math.floor(Math.random() * 10 ** 16);
 
     var data = JSON.stringify({
@@ -71,7 +79,7 @@ class Compute extends React.Component<any, any> {
       url:
         "https://corsbridge.xiaopai.workers.dev/?https://healthydiffusion.com/process",
       headers: {
-        Origin: "https://healthydiffusion.com/",
+      
         "Content-Type": "application/json"
       },
       data: data
@@ -153,6 +161,11 @@ class Compute extends React.Component<any, any> {
           </VStack>
         </HStack>
 
+
+         
+       <ErrorAlert show={this.state.showError} />
+         
+       
         <Textarea
           placeholder="Enter a sentence..."
           size="sm"
@@ -190,6 +203,8 @@ class Compute extends React.Component<any, any> {
         </Stack>
 
         <Result result_src={this.state.result_src}></Result>
+
+       
       </Stack>
     );
   }

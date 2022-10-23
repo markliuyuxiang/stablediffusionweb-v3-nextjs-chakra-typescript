@@ -14,17 +14,17 @@ import Footer from "lib/components/Footer";
 import Playground from "lib/components/Playground";
 import Navbar from "lib/components/Navbar";
 import Card from "lib/components/Card";
-
+import HgFrame from "lib/components/HgFrame";
 const Home = () => {
   return (
     <>
-      <NextSeo title="Home" />
+      <NextSeo title="Stable Diffusion Online" />
 
       <Fonts />
       <Navbar />
       <Hero />
       <Playground />
-
+      {/* <HgFrame /> */}
       <Footer />
     </>
   );

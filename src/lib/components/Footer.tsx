@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { ReactNode } from "react";
-
+import NextLink from "next/link";
 const SocialButton = ({
   children,
   label,
@@ -59,6 +59,8 @@ export default function SmallWithSocial() {
       >
         <Text>© 2022 Stable Diffusion Online. All rights reserved</Text>
         <Stack direction={"row"} spacing={6}>
+          <a href="/license.html" target="_blank"> <Text spacing={6}>License</Text></a>
+
           <SocialButton label={"Twitter"} href={"#"}>
             <FaTwitter />
           </SocialButton>

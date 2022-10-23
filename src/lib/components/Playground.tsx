@@ -22,6 +22,7 @@ import { CheckIcon } from "@chakra-ui/icons";
 
 export default function Playground() {
   return (
+    <div id="demo">
     <Flex
       minH={"60vh"}
       w="100%"
@@ -49,5 +50,6 @@ export default function Playground() {
         </Box>
       </Stack>
     </Flex>
+    </div>
   );
 }

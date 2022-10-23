@@ -13,7 +13,7 @@ import {
   IconProps,
   useColorModeValue
 } from "@chakra-ui/react";
-
+import NextLink from "next/link";
 export default function CallToActionWithVideo() {
   return (
     <Container maxW={"7xl"}>
@@ -63,7 +63,7 @@ export default function CallToActionWithVideo() {
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
-          >
+          > <NextLink href="#demo" passHref>
             <Button
               rounded={"full"}
               size={"lg"}
@@ -75,9 +75,8 @@ export default function CallToActionWithVideo() {
             >
               Get started
             </Button>
-            <Button rounded={"full"} size={"lg"} fontWeight={"normal"} px={6}>
-              How It Works
-            </Button>
+            </NextLink>
+         
           </Stack>
         </Stack>
         <Flex
