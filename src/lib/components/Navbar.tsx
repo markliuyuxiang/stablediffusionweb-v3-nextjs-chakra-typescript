@@ -52,6 +52,9 @@ export default function Navbar() {
             <Text as={"span"} color={"black.400"}>
               Stable Diffusion Online
             </Text>
+
+
+           
           </HStack>
           <Flex alignItems={"center"}>
             <ColorModeSwitcher justifySelf="flex-end" />
