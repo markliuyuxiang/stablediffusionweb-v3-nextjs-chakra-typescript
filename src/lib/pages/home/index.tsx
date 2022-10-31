@@ -15,6 +15,8 @@ import Playground from "lib/components/Playground";
 import Navbar from "lib/components/Navbar";
 import Card from "lib/components/Card";
 import HgFrame from "lib/components/HgFrame";
+import ModeSelector from "lib/components/ModeSelector";
+
 const Home = () => {
   return (
     <>
@@ -23,8 +25,9 @@ const Home = () => {
       <Fonts />
       <Navbar />
       <Hero />
-      <Playground />
-      {/* <HgFrame /> */}
+       
+      <HgFrame />
+
       <Footer />
     </>
   );

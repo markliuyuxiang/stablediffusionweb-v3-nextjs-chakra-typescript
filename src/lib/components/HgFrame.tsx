@@ -12,7 +12,7 @@ export default function HgFrame() {
         sandbox="allow-forms allow-modals allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-downloads"
         scrolling="no"
         height="1480"
-      />
+      ></iframe>
     </div>
     </div>
   );

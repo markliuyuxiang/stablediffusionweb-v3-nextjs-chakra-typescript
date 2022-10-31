@@ -18,7 +18,6 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import Compute from "./Compute";
-import { CheckIcon } from "@chakra-ui/icons";
 
 export default function Playground() {
   return (
